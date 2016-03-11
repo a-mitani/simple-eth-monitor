@@ -1,3 +1,4 @@
+amplify@1.0.0
 autopublish@1.0.4
 autoupdate@1.2.4
 babel-compiler@5.8.24_1
@@ -22,7 +23,11 @@ ecmascript@0.1.6
 ecmascript-runtime@0.2.6
 ejson@1.0.7
 es5-shim@4.1.14
+ethereum:accounts@0.3.10
+ethereum:blocks@0.3.1
+ethereum:web3@0.15.3
 fastclick@1.0.7
+frozeman:persistent-minimongo@0.1.8
 geojson-utils@1.0.4
 hot-code-push@1.0.0
 html-tools@1.0.5
@@ -59,6 +64,7 @@ standard-minifiers@1.0.2
 templating@1.1.5
 templating-tools@1.0.0
 tracker@1.0.9
+twbs:bootstrap@3.3.6
 ui@1.0.8
 underscore@1.0.4
 url@1.0.5
