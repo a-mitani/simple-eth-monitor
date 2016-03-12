@@ -1,6 +1,49 @@
 <head>
-  <title>Simple Ethereum Status Monitor</title>
+  <title>Simple Ethereum Statud Explorer</title>
 </head>
+
 <body>
-  <h1> Hello, world!!</h1>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Simple Ethereum Status Explorer</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid">
+    <div class="row-fluid">
+      <div class="col-md-8 col-md-offset-2">
+        {{> nodeStatusComponent}} 
+      </div>
+    </div>
+  </main>
 </body>
+
+<template name="nodeStatusComponent">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4>Node Status</h4>
+    </div>
+    <table class="table">
+      <tbody>
+          <tr>
+            <th scope="row">Node</th>
+            <td>{{currentProvider}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Is Mining?</th>
+            <td>{{isMining}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Hashrate</th>
+            <td>{{currentHashrate}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Peer Count</th>
+            <td>{{currentPeerCount}}</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
