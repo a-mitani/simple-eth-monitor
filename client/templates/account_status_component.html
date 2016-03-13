@@ -1,0 +1,25 @@
+<template name="accountStatusComponent">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4>Account Status (Reactive)</h4>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each accounts}}
+          <tr>
+            <td>{{name}}</td>
+            <td>{{address}}</td>
+            <td>{{balance}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</template>
